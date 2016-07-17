@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90F8FD11D3C4BEA007D9628 /* button-27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90F8FD01D3C4BEA007D9628 /* button-27.mp3 */; };
 		E9FACA641D3BE1C000B86527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FACA631D3BE1C000B86527 /* AppDelegate.swift */; };
 		E9FACA661D3BE1C000B86527 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FACA651D3BE1C000B86527 /* MainVC.swift */; };
 		E9FACA691D3BE1C000B86527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FACA671D3BE1C000B86527 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90F8FD01D3C4BEA007D9628 /* button-27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-27.mp3"; sourceTree = "<group>"; };
 		E9FACA601D3BE1C000B86527 /* Quotables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FACA631D3BE1C000B86527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FACA651D3BE1C000B86527 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				E9FACA671D3BE1C000B86527 /* Main.storyboard */,
 				E9FACA6A1D3BE1C000B86527 /* Assets.xcassets */,
 				E9FACA6C1D3BE1C000B86527 /* LaunchScreen.storyboard */,
+				E90F8FD01D3C4BEA007D9628 /* button-27.mp3 */,
 				E9FACA6F1D3BE1C000B86527 /* Info.plist */,
 			);
 			path = Quotables;
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9FACA6E1D3BE1C000B86527 /* LaunchScreen.storyboard in Resources */,
+				E90F8FD11D3C4BEA007D9628 /* button-27.mp3 in Resources */,
 				E9FACA6B1D3BE1C000B86527 /* Assets.xcassets in Resources */,
 				E9FACA691D3BE1C000B86527 /* Main.storyboard in Resources */,
 			);
@@ -288,6 +292,7 @@
 				E9FACA741D3BE1C000B86527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

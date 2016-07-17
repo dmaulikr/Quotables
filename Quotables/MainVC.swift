@@ -8,7 +8,11 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+import AVFoundation
+
+class MainVC: UIViewController, AVAudioPlayerDelegate {
+    
+    var audioPlayer: AVAudioPlayer?
     
     let quoteArray = [ "Don't cry because it's over, smile because it happened. ~ Dr. Seuss",
                        "Be yourself; everyone else is already taken. ~ Oscar Wilde",
@@ -54,6 +58,49 @@ class MainVC: UIViewController {
         quoteLabel.text = quoteArray[random]
         
     }
+    
+    func playSound (sound: Sound) {
+        let dispatchQueue =
+            dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+        
+        dispatch_async(dispatchQueue, {[weak self] in
+            let mainBundle = NSBundle.mainBundle()
+            
+            /* Find the location of our file to feed to the audio player */
+            let filePath = mainBundle.pathForResource(sound.fileName, ofType:sound.fileExtension)
+            
+            if let path = filePath{
+                let fileData = NSData(contentsOfFile: path)
+                
+                var error:NSError?
+                
+                do {
+                    /* Start the audio player */
+                    self!.audioPlayer = try AVAudioPlayer(data: fileData!)
+                } catch let error1 as NSError {
+                    error = error1
+                    self!.audioPlayer = nil
+                } catch {
+                    fatalError()
+                }
+                
+                /* Did we get an instance of AVAudioPlayer? */
+                if let player = self!.audioPlayer {
+                    /* Set the delegate and start playing */
+                    player.delegate = self
+                    if player.prepareToPlay() && player.play(){
+                        /* Successfully started playing */
+                    } else {
+                        /* Failed to play */
+                    }
+                } else {
+                    /* Failed to instantiate AVAudioPlayer */
+                }
+            }
+            
+            })
+    }
+
 
 }
 
