@@ -57,7 +57,17 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
         let random = Int(arc4random_uniform(UInt32(quoteArray.count)))
         quoteLabel.text = quoteArray[random]
         
+        // play sound here:
+        playSound(beep)
+        
     }
+    
+    // MARK:  Motion Detection
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        nextQuoteButton(UIEvent)
+    }
+    
+    
     
     func playSound (sound: Sound) {
         let dispatchQueue =

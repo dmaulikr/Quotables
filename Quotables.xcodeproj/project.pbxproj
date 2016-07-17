@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E90F8FD11D3C4BEA007D9628 /* button-27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90F8FD01D3C4BEA007D9628 /* button-27.mp3 */; };
+		E90F8FD31D3C4D51007D9628 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F8FD21D3C4D51007D9628 /* Sound.swift */; };
 		E9FACA641D3BE1C000B86527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FACA631D3BE1C000B86527 /* AppDelegate.swift */; };
 		E9FACA661D3BE1C000B86527 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FACA651D3BE1C000B86527 /* MainVC.swift */; };
 		E9FACA691D3BE1C000B86527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FACA671D3BE1C000B86527 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		E90F8FD01D3C4BEA007D9628 /* button-27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-27.mp3"; sourceTree = "<group>"; };
+		E90F8FD21D3C4D51007D9628 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		E9FACA601D3BE1C000B86527 /* Quotables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FACA631D3BE1C000B86527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FACA651D3BE1C000B86527 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FACA631D3BE1C000B86527 /* AppDelegate.swift */,
+				E90F8FD21D3C4D51007D9628 /* Sound.swift */,
 				E9FACA651D3BE1C000B86527 /* MainVC.swift */,
 				E9FACA671D3BE1C000B86527 /* Main.storyboard */,
 				E9FACA6A1D3BE1C000B86527 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9FACA661D3BE1C000B86527 /* MainVC.swift in Sources */,
+				E90F8FD31D3C4D51007D9628 /* Sound.swift in Sources */,
 				E9FACA641D3BE1C000B86527 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
