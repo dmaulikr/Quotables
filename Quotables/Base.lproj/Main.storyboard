@@ -47,9 +47,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="1Mw-fg-FIG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Next Quote">
+                                    <color key="titleColor" red="0.65812116861343384" green="0.91846424341201782" blue="0.92404383420944214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

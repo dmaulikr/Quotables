@@ -22,7 +22,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
                        "If you tell the truth, you don't have to remember anything. ~ Mark Twain",
                        "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring. ~ Marilyn Monroe",
                        "Good friends, good books, and a sleepy conscience: this is the ideal life. ~ Mark Twain",
-                       "“A woman is like a tea bag; you never know how strong it is until it's in hot water.  ~ Eleanor Roosevelt",
+                       "A woman is like a tea bag; you never know how strong it is until it's in hot water.  ~ Eleanor Roosevelt",
                        "“Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.  ~ Bil Keane",
                        "I have not failed. I've just found 10,000 ways that won't work.  ~ Thomas A. Edison",
                        "It is not a lack of love, but a lack of friendship that makes unhappy marriages.  ~ Friedrich Nietzsche",
@@ -89,7 +89,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        quoteLabel.text = "Press button below or shake phone for next quote"
+        quoteLabel.text = "Press button below or shake phone for next quote!!"
         
     }
 
