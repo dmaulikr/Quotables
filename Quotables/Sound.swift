@@ -25,5 +25,5 @@ class Sound {
 }
 
 //MARK:  Variable for Sound
-let beep = Sound(fileName: "button-27", fileExtension: "mp3")
+let beep1 = Sound(fileName: "heart-of-the-sea-01", fileExtension: "mp3")
 

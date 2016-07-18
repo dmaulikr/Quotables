@@ -104,7 +104,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
         quoteLabel.text = quoteArray[random]
         
         // play sound here:
-        playSound(beep)
+        playSound(beep1)
         
     }
     
