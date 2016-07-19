@@ -100,11 +100,16 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
 
     @IBAction func nextQuoteButton(sender: AnyObject) {
         
+        
+        // Random quotes
         let random = Int(arc4random_uniform(UInt32(quoteArray.count)))
         quoteLabel.text = quoteArray[random]
         
         // play sound here:
         playSound(beep1)
+        
+        
+        
         
     }
     
@@ -112,8 +117,6 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         nextQuoteButton(UIEvent)
     }
-    
-    
     
     func playSound (sound: Sound) {
         let dispatchQueue =
